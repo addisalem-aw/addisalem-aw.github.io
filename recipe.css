@@ -1,0 +1,19 @@
+
+h1,h2{
+	text-decoration: underline;
+	text-decoration-color: #A4A400;
+	text-color: #A4A400;
+}
+h1{
+	text-align: center;
+
+}
+h2{
+	text-align: left;
+	font-size: 18pt
+	background-color:#F0F0F0;
+
+}
+.nolist {
+           list-style: none;
+            }
