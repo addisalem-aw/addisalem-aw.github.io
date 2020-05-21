@@ -26,9 +26,15 @@ ol,ul{
 a{
 	color: #A4A400;
 }
-.c1{
+.c1,.c2,.c3{
 	background-color:rgb(163, 163, 34)
 }
 .nolist {
            list-style: none;
-            }
+			}
+
+span{
+	text-decoration: underline;
+	text-decoration-color: teal;
+   }
+  
