@@ -1,0 +1,86 @@
+body{
+    background-image: url("images/background.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+h1{
+    text-align: center;
+}
+.clearfix {
+    display: inline-block;
+  }
+.mainsec{
+    margin-left:300px ;
+    margin-right: 300px;  
+    max-height: 100%;
+    border: 4px solid grey;
+    border-radius: 10px;
+    
+}
+
+#top{
+    background-image: url("images/rbg.png");
+    width: 100%;
+    vertical-align: middle;
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+}
+#comment{
+    width: 668px;
+    float: left;
+
+
+}
+#movieinfo{
+    width: 243px;
+   background-color: #A2B964;
+    float: left;
+}
+#comment1{
+    width: 334px;
+    float: left;
+}
+
+dt{
+    font-weight: bold;
+}
+.quote{
+    font-weight: bold;
+    border: gray 2px;
+    display: grid;
+    margin: 2px;
+    background-color:#E8DC9B ;
+    border-radius: 10px;
+}
+
+
+#foot{
+    height: 20px;
+    background-color: #A2B964 ;
+    clear:both;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 2px;
+}
+#dlist{
+  
+    padding: 10px;
+    margin: 0;
+   
+
+}
+.validator{
+
+    position: absolute;
+    right:0;
+    bottom: 0; 
+    width: 100px; 
+} 
+
+ 
