@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keyword" content="checkout form">
+        <title>Checkout Form</title>
+        <link rel="stylesheet" type="text/css" href="checkoutstyle.css">
+    </head>
+    <body>
+        <form action="" method="GET">
+           
+            <h2>Checkout Form</h2>
+            <p>Please fill the form and enjoy our product.</p><hr/>
+            <fieldset>
+            <legend>Personal Detail</legend>
+              <div>
+                <label id="lblname">Name </label>
+                <input type="text"  id="txtname" placeholder="First Name"/>
+                <input type="text" id="txtname" placeholder="Last Name"/>
+              </div>
+              <div>
+                <lable id="lblemail">Email </lable>
+                <input type="email" placeholder="abc@gmail.com" id="txtemail"/>
+              </div>
+              <div>
+                <lable id="lblssn">SSN </lable>
+                <input type="text" placeholder="123-45-6789" id="txtemail"/>
+              </div>
+              <div>
+                <lable id="Phone Number">Phone Number </lable>
+                <input type="tel" id="txtphone" placeholder="641-889-8989" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+              </div>
+            </fieldset>
+            <fieldset>
+            <legend>Billing Address</legend>
+            <div>
+                <label>Street Address</label>
+                <input type="text"  id="adr" placeholder="1000 N 4th Street"/>
+            </div>
+            <div>
+                <label for="c"> Country</label>
+                <input list="country" id="country-choice" name="country-choice" placeholder="choose country" />
+                <datalist id="country">
+                <option value="Albania">
+                <option value="Brazil">
+                <option value="Chad">
+                <option value="Denmark">
+                <option value="Ethiopia">
+                <option value="Finland">  
+                </datalist>
+                <label>state </label> <input type="text"  id="adr" placeholder="Iowa"/>
+                <label>Zip</label><input type="text"  id="adr" placeholder="52557"/>
+            </fieldset>
+            <fieldset>
+                <legend>Shpping Address</legend>
+                <div>
+                    <label>Street Address</label>
+                    <input type="text"  id="adr" placeholder="1000 N 4th Street"/>
+                </div>
+                <div>
+                    <label for="c"> Country</label>
+                    <input list="country" id="country-choice" name="country-choice" placeholder="choose country" />
+                    <datalist id="country">
+                    <option value="Albania">
+                    <option value="Brazil">
+                    <option value="Chad">
+                    <option value="Denmark">
+                    <option value="Ethiopia">
+                    <option value="Finland">  
+                    </datalist>
+                    <label>state </label> <input type="text"  id="adr" placeholder="Iowa"/>
+                    <label>Zip</label><input type="text"  id="adr" placeholder="52557"/>
+            </fieldset>
+            <fieldset>
+                 <legend>Payment Detail</legend>
+                   <label><input type="radio" name="cc" value="visa" checked="checked" /> Visa</label>
+                   <label><input type="radio" name="cc" value="master card" /> Master Card</label>
+                   <label><input type="radio" name="cc" value="amx" /> American Express</label>
+                   <div>
+                      <label>Card Number </label> <input type="text"  id="cn" placeholder="0000-0000-0000-0000"/>
+                   </div>
+                   <div>
+                        <label>Security Code</label> <input type="text"  id="sc" placeholder="000"/>
+                        <label>Expiration Date</label> <input type="date"  id="sc" />
+                 </div>
+          
+           </fieldset> 
+
+            <div class="agree">
+                <p>Checkout Agreement</p>
+            <pre>
+            We may delay, suspend or reject a transaction for any Payment Account for any reason,including
+            without limitation if we suspect the transaction subjects us to financial or security risk or is
+            unauthorized, fraudulent, suspicious, unlawful, in violation of the terms of this Agreement, 
+            subject to dispute (including without limitation a dispute under our Buyer Dispute Program) 
+            or Chargeback, or otherwise unusual.
+                </pre>
+
+           <input type="checkbox" name="aggrement" /> I agree to the term of the service.     
+           <input type="submit" name="submit"  />
+           <input type="reset" name="reset"  />   
+        </form>
+
+    </body>
+</html>

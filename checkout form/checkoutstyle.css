@@ -1,0 +1,28 @@
+
+ body{
+     background-image: url("background.png");
+ }
+ h2{
+     text-align: center;
+ }
+ p{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 14pts;
+ }
+ fieldset{
+    width: 700px;
+    margin-left:50px;
+ }
+ legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    width: 500px;
+  }
+  
+  input {
+    margin: 5px;
+  }
+  pre{
+    width: 300px; 
+  }
