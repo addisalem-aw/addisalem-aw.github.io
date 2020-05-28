@@ -1,0 +1,15 @@
+h1{
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+legend{
+    font-weight: bold;
+}
+button,label{
+    display: block;
+    margin:5px;
+}
+textarea{
+    text-align: right;
+}

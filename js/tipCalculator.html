@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <style >
+      .header{
+       display: inline;
+      }
+      h1{
+        font-weight: bold;  
+      }
+      body{
+          padding-left: 230px;
+          padding-top:50px;
+      }
+      input,label,button,span{
+          margin: 6px;
+          font-size:x-large;
+         
+      }
+    </style>
+    <script>
+ 
+        function calculateTip() {
+        const subtotal=document.getElementById("subtotal").value 
+        const tip= document.getElementById("tip").value;
+        document.getElementById('total').innerHTML= "$ "+ (parseFloat(subtotal) * parseFloat(tip)*0.01).toFixed(2);
+}
+    </script>
+</head>
+<body>
+    <img src="images/calc.png " alt="calculator"  width="250px"/> 
+    <h1 class="header">Tip Calculator</h1>
+
+ 
+   <div> <input type="text" id ="subtotal"/> <label>$Subtotal</label></div>
+    <div><input type="text" id ="tip"/> <label> % Tip</label></div>
+    <button onclick="calculateTip();">Calculate Tip</button>
+    <hr/>
+    <h1>Your total:</h1>
+    <span id="total"></span>
+
+</body>
+</html>
