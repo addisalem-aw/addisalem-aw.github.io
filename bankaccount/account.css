@@ -1,0 +1,20 @@
+h1{
+    color: grey;
+    margin-left: 250px;
+}
+fieldset{
+border: 4px grey solid;
+width: 500px;
+align-items: center;
+background-color: lightgrey;
+margin-left: 100px;
+
+}
+button,textarea{
+    display: block;
+}
+button,textarea,label,input{
+    padding: 5px;
+    margin: 5px;
+    width:500px;
+}
