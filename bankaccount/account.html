@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
     <link href="account.css" type="text/css" rel="stylesheet"/>
+    <script src="account.js"></script> 
 </head>
 <body>
     <h1>Create Bank Account</h1>
     <div>
         <fieldset>
         <div>
-            <label>Account Name:</label> 
-            <input type="text" id="txtacctName"/>
+            <label for="c"> Account Name:</label>
+            <input list="namelst" id="accountname" placeholder="Choose Account Type" />
+                <datalist id="namelst">
+                  <option value="Checking">
+                  <option value="Saving">
+                  <option value="Business">
+                </datalist>
         </div>
         <div>
             <label>Deposit:</label>
