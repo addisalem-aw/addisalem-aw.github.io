@@ -1,5 +1,4 @@
 (function(){
-"use strict";
     $(document).ready(function () {
     let filledposition = []; 
     let blank= {leftpx:"300px",toppx:"300px"};
