@@ -2,7 +2,8 @@
     $(document).ready(function(){
         $(function() {
             $('#myselect').change(function() {
-                var file = 'samplefiles/'+$('#myselect').val();
+               // var file = 'samplefiles/'+$('#myselect').val();
+               var file = 'samplefiles/aboutme.txt'
                 $.ajax({
                     'url': file,
                     'type': 'GET',
