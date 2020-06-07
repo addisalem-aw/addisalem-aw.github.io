@@ -21,7 +21,7 @@
           console.log(xhr, status, exception);
         }
         
-       // $.get('https://github.com/Addis-git/Addis-git.github.io');
+        $.get('https://github.com/Addis-git/Addis-git.github.io');
 
     });
 })();
