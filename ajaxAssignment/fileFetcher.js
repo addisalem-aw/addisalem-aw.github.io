@@ -3,7 +3,7 @@
         $(function() {
             $('#myselect').change(function() {
                // var file = 'samplefiles/'+$('#myselect').val();
-               var file = 'samplefiles/aboutme.txt'
+               var file = 'https://github.com/Addis-git/Addis-git.github.io/samplefiles/aboutme.txt';
                 $.ajax({
                     'url': file,
                     'type': 'GET',
@@ -21,7 +21,7 @@
           console.log(xhr, status, exception);
         }
         
-        $.get('https://github.com/Addis-git/Addis-git.github.io');
+       // $.get('https://github.com/Addis-git/Addis-git.github.io');
 
     });
 })();
