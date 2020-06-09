@@ -1,19 +1,23 @@
 (function(){
     $(document).ready(function(){
-        $("#btn").click(function(){
- 
-       // $('#myselect').change(function() {
-            var backendUrl = "https://github.com/Addis-git/Addis-git.github.io/tree/master/sampleFiles/aboutme.txt";
-            $.ajax({
-                type: "GET",
-                url: backendUrl
-            }).done(function (result) {
-                console.log("working");
-                window.location.href = backendUrl;
-            }).fail(function () {
-                alert("Sorry URL is not access able");
-             });
-            });
+            let choiceSelector = $("#myselect");
+            let outputArea = $("#output");
+
+            choiceSelector.change(function() {
+                let val = $(this).val();
+                $.ajax({
+                    url: "https://Addis-git.github.io/sampleFiles" + val,
+                    type: 'GET',
+                    success: function(response) {
+                        outputArea.val(response);
+                    },
+                    error: function(error) {
+                        console.log(error)
+                    },
+
+                })
+            })
+                
     
     });
 })();

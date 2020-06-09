@@ -1,12 +1,30 @@
-
-
 <!DOCTYPE html>
 <html>
-	
 	<head>
 		<title>Output Comparison Tool</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-		<script src="fileFetcher.js" type="text/javascript"></script>
+		<!-- <script src="fileFetcher.js" type="text/javascript"> -->
+		<script>
+        $(function() {
+            let choiceSelector = $("#myselect");
+            let outputArea = $("#output");
+
+            choiceSelector.change(function() {
+                let val = $(this).val();
+                $.ajax({
+                    url: "https://Addis-git.github.io/" + val,
+                    type: 'GET',
+                    success: function(response) {
+                        outputArea.val(response);
+                    },
+                    error: function(error) {
+                        console.log(error)
+                    },
+
+                })
+            })
+        })
+    </script>
 	</head>
 
 	<body>
@@ -23,7 +41,7 @@
 
 		<div>
 			<textarea id="output" rows="30" cols="80"></textarea>
-			<button id="btn">check</button>
+		
 		</div>
 	</body>
 </html>
