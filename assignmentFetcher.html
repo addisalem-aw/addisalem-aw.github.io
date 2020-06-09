@@ -3,7 +3,7 @@
 
 <head>
 
-		<title>Output Comparison Tool</title>
+		<!-- <title>Output Comparison Tool</title> -->
 		
 </head>
 
@@ -30,7 +30,7 @@
             choiceSelector.change(function() {
                 let val = $(this).val();
                 $.ajax({
-                    url: "https://addis-git.github.io/" + val,
+                    url: "https://Addis-git.github.io/" + val,
                     type: 'GET',
                     success: function(response) {
                         outputArea.val(response);
