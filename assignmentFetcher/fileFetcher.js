@@ -3,7 +3,7 @@
         $("#btn").click(function(){
  
        // $('#myselect').change(function() {
-            var backendUrl = "https://addis-git.github.io/assignmentFetcher/fileFetcher.html";
+            var backendUrl = "https://github.com/Addis-git/Addis-git.github.io/tree/master/sampleFiles/aboutme.txt";
             $.ajax({
                 type: "GET",
                 url: backendUrl
