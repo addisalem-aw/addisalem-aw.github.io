@@ -29,7 +29,7 @@
             choiceSelector.change(function() {
                 let val = $(this).val();
                 $.ajax({
-                    url: "https://Addis-git.github.io" + val,
+                    url: "https://addis-git.github.io" + val,
                     type: 'GET',
                     success: function(response) {
                         outputArea.val(response);
